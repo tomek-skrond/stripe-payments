@@ -1,0 +1,17 @@
+{
+    "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.13.4/.schema/devbox.schema.json",
+    "packages": [
+      "stripe-cli"
+    ],
+    "shell": {
+      "init_hook": [
+        "echo 'Welcome to devbox!' > /dev/null"
+      ],
+      "scripts": {
+        "app" : [
+          "CGO_ENABLED=0 go run ./cmd/"
+        ]
+      }
+    }
+  }
+  
